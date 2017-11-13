@@ -1,1 +1,29 @@
+## Problem C
 
+### 1.
+
+Download software.
+
+### 2.
+
+First use a python script to format raw data into standard libsvm data format and split data into two parts. Then use libsvm command line tool to scale data.
+
+`python preprocess.py rawdata`
+
+`svm-scale -l -1 -u 1 -s scale.txt train.txt > train.scale.txt`
+
+`svm-scale -r scale.txt test.txt > test.scale.txt`
+
+### 3.
+
+Use the libsvm python script to randomly split data into ten parts.
+
+Then generate a training sample from 9 splits, and use the left 1 as testing sample. Use each split file as a testing sample, so 10 such training samples will be genereated.
+
+Then use a python script to train and generate outputs.
+
+Finally, reformat outputs and plot.
+
+Output plots:
+
+From the figure above we can see that the performances are very close, I would choose C to be 2^10 and degree to be 4 since it's the smoothest choice.
