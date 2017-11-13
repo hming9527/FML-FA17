@@ -8,7 +8,7 @@ Download software.
 
 First use a python script to format raw data into standard libsvm data format and split data into two parts. Then use libsvm command line tool to scale data.
 
-`python preprocess.py rawdata`
+`python preprocess.py`
 
 `svm-scale -l -1 -u 1 -s scale.txt train.txt > train.scale.txt`
 
@@ -27,3 +27,13 @@ Finally, reformat outputs and plot.
 Output plots:
 
 From the figure above we can see that the performances are very close, I would choose C to be 2^10 and degree to be 4 since it's the smoothest choice.
+
+### 4.
+
+Compare of cross-validation error and test error:
+
+We can see that as degree increases, both error decreases, but somehow my test error is better than cross-validation error.
+
+Number of support vector machines:
+
+We can see that the average number of total support vectors decreases while the average number of marginal support vectors increases as degree increases.
