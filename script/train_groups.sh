@@ -1,0 +1,10 @@
+cat split1 split2 split3 split4 split5 split6 split7 split8 split9 > train1 # 10
+cat split2 split3 split4 split5 split6 split7 split8 split9 split10 > train2 # 1
+cat split3 split4 split5 split6 split7 split8 split9 split10 split1 > train3 # 2
+cat split4 split5 split6 split7 split8 split9 split10 split1 split2 > train4 # 3
+cat split5 split6 split7 split8 split9 split10 split1 split2 split3 > train5 # 4
+cat split6 split7 split8 split9 split10 split1 split2 split3 split4 > train6 # 5
+cat split7 split8 split9 split10 split1 split2 split3 split4 split5 > train7 # 6
+cat split8 split9 split10 split1 split2 split3 split4 split5 split6 > train8 # 7
+cat split9 split10 split1 split2 split3 split4 split5 split6 split7 > train9 # 8
+cat split10 split1 split2 split3 split4 split5 split6 split7 split8 > train10 # 9
