@@ -26,10 +26,10 @@ Finally, reformat outputs and plot.
 
 Output plots:
 
-![degree=1](../figure/deg1.png)
-![degree=2](../figure/deg2.png)
-![degree=3](../figure/deg3.png)
-![degree=4](../figure/deg4.png)
+![degree=1](https://github.com/hming9527/FML-FA17/blob/master/figure/deg1.png)
+![degree=2](https://github.com/hming9527/FML-FA17/blob/master/figure/deg2.png)
+![degree=3](https://github.com/hming9527/FML-FA17/blob/master/figure/deg3.png)
+![degree=4](https://github.com/hming9527/FML-FA17/blob/master/figure/deg4.png)
 
 From the figure above we can see that the performances are very close, I would choose C to be 2^10 and degree to be 4 since it's the smoothest choice.
 
@@ -37,12 +37,12 @@ From the figure above we can see that the performances are very close, I would c
 
 Compare of cross-validation error and test error:
 
-![error](../figure/error_compare.png)
+![error](https://github.com/hming9527/FML-FA17/blob/master/figure/error_compare.png)
 
 We can see that as degree increases, both error decreases, but somehow my test error is better than cross-validation error.
 
 Number of support vector machines:
 
-![nsv](../figure/numSV.png)
+![nsv](https://github.com/hming9527/FML-FA17/blob/master/figure/numSV.png)
 
 We can see that the average number of total support vectors decreases while the average number of marginal support vectors increases as degree increases.
